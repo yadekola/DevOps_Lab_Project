@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Here is the argument we are going to run to get it done
+## ./5_args_websetup.sh https://www.tooplate.com/zip-templates/2100_artist.zip 2100_artist
+
 # Variable Declaration
 PACKAGE="httpd wget unzip"
 SVC="httpd"
