@@ -1,0 +1,24 @@
+Vagrant.configure("2") do |config|
+	# Base box
+	config.vm.box = "ubuntu/jammy64"
+
+	# Hostname
+	config.vm.hostname = "ubuntu-jammy"
+
+	# Network: bridged adapter (no static IP)
+	config.vm.network "public_network"
+
+	# Private network with static IP
+	config.vm.network "private_network", ip: "192.168.56.17"
+
+	# Sync host './scripts' folder to guest '/opt/scripts'
+	# Create a 'scripts' directory next to this Vagrantfile to sync into the VM
+	config.vm.synced_folder "./scripts", "/opt/scripts", create: true
+
+	# Provider-specific configuration for VirtualBox
+	config.vm.provider "virtualbox" do |vb|
+		vb.name = "ubuntu-jammy64"
+		vb.memory = 1024
+		vb.cpus = 2
+	end
+end
