@@ -1,0 +1,47 @@
+ 1  clear
+    2  apt update
+    3  apt upgrate
+    4  apt upgrade
+    5  apt search jdk
+    6  apt search jdk | grep 17
+    7  apt install openjdk-21-jdk -y
+    8  java -version
+    9  apt install maven -y
+   10  mvn -version
+   11  git clone https://github.com/hkhcoder/vprofile-project.git
+   12  ls
+   13  cd vprofile-project/
+   14  ls
+   15  git status
+   16  mvn validate
+   17  mvn test
+   18  ls
+   19  ls target/
+   20  mvn instatll
+   21  ls ~/.m2/repository/
+   22  rm -rf ~/.m2/repository/*
+   23  ls ~/.m2/repository/
+   24  rm -rf target/
+   25  ls
+   26  mvn clean install
+   27  ls ~/.m2/repository/
+   28  ls
+   29  mvn instatll
+   30  free -m
+   31  export MAVEN_OPTS="-Xmx1024m"
+   32  mvn instatll
+   33  rm -rf target/
+   34  rm -rf ~/.m2/repository/*
+   35  vim pom.xml
+   36  mvn instatll
+   37  mvn --v
+   38  mvn install
+   39  vim pom.xml
+   40  mvn clean install
+   41  apt install openjdk-17-jdk -y
+   42  sudo update-alternatives --config java
+   43  java  --v
+   44  java  -version
+   45  mvn clean install
+   46  ls target/
+   47  history
